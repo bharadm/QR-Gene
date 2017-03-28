@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="20dp"
+    android:rowCount="4"
+    android:columnCount="2">
+        <TextView
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:id="@+id/tv_nop"
+            android:text="Name of Participant:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <EditText
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:layout_column="1"
+            android:layout_row="0"
+            android:inputType="text"
+            android:id="@+id/et_nop"
+            android:minEms="10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="30dp"
+            android:padding="10dp"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:id="@+id/tv_pn"
+            android:text="Pass Number:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_marginTop="30dp"
+            android:padding="10dp"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:id="@+id/et_pn"
+            android:inputType="text"
+            android:minEms="10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_nop" />
+        <TextView
+            android:layout_marginTop="30dp"
+            android:padding="10dp"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:id="@+id/tv_pno"
+            android:inputType="number"
+            android:text="Phone Number:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_marginTop="30dp"
+            android:padding="10dp"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:id="@+id/et_pno"
+            android:inputType="phone"
+            android:minEms="10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="85dp"
+            android:layout_above="@+id/bt_main"
+            android:layout_alignStart="@+id/et_pn" />
+        <Button
+            android:layout_marginLeft="40dp"
+            android:layout_column="0"
+            android:layout_row="3"
+            android:onClick="bt_main"
+            android:id="@+id/bt_main"
+            android:text="Submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="72dp" />
+        <Button
+            android:layout_marginLeft="80dp"
+            android:layout_row="3"
+            android:layout_column="1"
+            android:onClick="bt_reset"
+            android:id="@+id/bt_rest"
+            android:text="Reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="72dp" />
+</GridLayout>
